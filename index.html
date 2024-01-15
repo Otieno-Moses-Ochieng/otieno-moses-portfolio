@@ -39,6 +39,10 @@
         <div class="content">
         <div class="home-content">
             <h3>Hello, it's me</h3>
+    <script>
+        var name = 'mose'
+        document.write(name);
+    </script>
             <h1>MOSES OTIENO</h1>
             <h3>And i am a <span>Front end developer</span></h3>
             <p>I am a passionate and dedicated front-end developer with a flair for creating seamless and user-friendly web experiences.<br> With a strong foundation in HTML, CSS, and JavaScript, I bring digital designs to life, turning visions into interactive, visually appealing websites and web applications.</p>
@@ -240,16 +244,17 @@
 <!--contact section-->
 <section class="contact" id="contact">
     <h2 class="heading">Contact  <span>Me!</span></h2>
-    <form action="#">
+    <form action="https://formsubmit.co/moses22otieno@gmail.com" method="POST">
         <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email adress">
+            <input type="text" placeholder="Full Name" name="name" required>
+            <input type="email" placeholder="Email adress" name="email" required>
         </div>
         <div class="input-box">
             <input type="number" placeholder="Mobile number">
-            <input type="text" placeholder="Email Subject">
+            <input type="text" placeholder="Email Subject" name="phone">
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder=""></textarea>
+        <input type="hidden" name="_captcha" value="false"> 
+        <textarea name="Message" required id="" cols="30" rows="10" placeholder=""></textarea>
         <input type="submit" value="Send Message" class="btn">
             </form>
 </section>
