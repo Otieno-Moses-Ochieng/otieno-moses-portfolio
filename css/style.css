@@ -11,7 +11,7 @@
 }
 :root{
     --bg-color:#1f242d;
-    --second-bg-color:#323946;
+    --second-bg-color:#444d5c;
     --tect-color:#fff;
     --main-color:#0ef;
 }
@@ -32,12 +32,13 @@ hr{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100;
+    width: 100%;
+    height: 70px;
     padding: 2rem 9%;
-    background:var(--bg-color);
+    background:url('../images/hbg.jpg');
     display: flex;
     width: 100%;
-    
+    background-size: cover;
     justify-content: space-between;
     z-index: 100;
 }
@@ -74,14 +75,17 @@ section{
 
 }
 .home{
-    
-    
+    position: relative; /* Add relative positioning */
+    display: flex;
     justify-content: center;
-    gap: 2rem;
     align-items: center;
-    background:var(--second-bg-color);
-    box-shadow: #0ef;
-    display: inline-flex;
+    gap: 2rem;
+    padding: 2rem; /* Adjust padding as needed */
+    background: url('../images/home-1.png') no-repeat;
+    background-size: cover; /* Cover the entire section */
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example box shadow */
+    z-index: 1; 
     
 }
 
@@ -93,7 +97,7 @@ section{
     
 }
 .home-content h3{
-    font-size: 3.2rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 .home-content h3:nth-of-type(2){
@@ -108,7 +112,7 @@ span{
     line-height: 1.3;
 }
 .home-content p{
-    font-size: 1.6rem;
+    font-size: 2.3rem;
 }
 .social-media a{
     display:inline-flex;
@@ -159,12 +163,17 @@ button{
 box-shadow: none;
 }
 .about{
+    position: relative; /* Add relative positioning */
     display: flex;
     justify-content: center;
-    gap: 2rem;
     align-items: center;
-    background: var(--second-bg-color);
-}
+    gap: 2rem;
+    padding: 2rem; /* Adjust padding as needed */
+    background: url('../images/m2.avif') no-repeat;
+    background-size: cover; /* Cover the entire section */
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example box shadow */
+    z-index: 1; }
 .about #more{
     display: none;
 }
@@ -187,6 +196,18 @@ border-radius: 50px;
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+.services{
+    position: relative; /* Add relative positioning */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem; /* Adjust padding as needed */
+    background: url('../images/m1.jpg') no-repeat;
+    background-size: cover; /* Cover the entire section */
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example box shadow */
+    z-index: 1; 
+}
 .services h2{
     margin-bottom: 5rem;
 }
@@ -196,6 +217,7 @@ border-radius: 50px;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    
 }
 
 .services-container .services-box{
@@ -222,7 +244,16 @@ border-radius: 50px;
     margin: 1rem 0 3rem;
 }
 .portfolio{
-    background: var(--second-bg-color);
+    position: relative; /* Add relative positioning */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem; /* Adjust padding as needed */
+    background: url('../images/m3.jpg') no-repeat;
+    background-size: cover; /* Cover the entire section */
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example box shadow */
+    z-index: 1; 
 }
 .portfolio h2{
     margin-bottom: 4rem;
@@ -290,10 +321,33 @@ transform: translateY(0);
     font-size: 2rem;
     color: var(--second-bg-color);
 }
+
+.contact{
+    position: relative; /* Add relative positioning */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem; /* Adjust padding as needed */
+    background: url('../images/m4.jpg') no-repeat;
+    background-size: cover; /* Cover the entire section */
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example box shadow */
+    z-index: 1; 
+   display: flex;
+}
+.contact .fcontainer{
+    width: 500px;
+    border: 10px white;
+    background-color: green;
+    height: auto;
+    border-radius:10px ;
+    padding: 20px;
+}
 .contact h2{
     margin-bottom: 3rem;
 }
 .contact form{
+    
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
