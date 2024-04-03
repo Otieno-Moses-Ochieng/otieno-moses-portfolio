@@ -65,13 +65,14 @@ hr{
     font-size: 3.6rem;
     color: var(--tect-color);
     display:none;
+    margin-right: 30px;
 }
 section{
 min-height: 100vh;
 padding: 10rem 9% 2rem;
 }
 section{
-    margin: 20px;
+    margin: 10px;
 
 }
 .home{
@@ -416,6 +417,12 @@ transform: translateY(0);
 
 
 
+ 
+       
+    
+
+
+
 /*breakpoints*/
 @media (max-width: 1200px){
     html{
@@ -498,6 +505,8 @@ transform: translateY(0);
     .portfolio-container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    
 }
 
 @media(max-width: 617px){
@@ -531,4 +540,7 @@ transform: translateY(0);
         text-align: center;
         margin-top: 2rem;
     }
+
+    
+    
 }
