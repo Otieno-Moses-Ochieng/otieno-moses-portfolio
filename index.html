@@ -28,8 +28,8 @@
 
     </header>
     <!--home section design-->
-    <section class="home" id="home">
-        
+    <section class="home" id="home" style="opacity: .9;">
+        <div class="home-transparent-div" style="background-color: black; padding: 20px;">
 
 
         <div class="home-image">
@@ -62,6 +62,7 @@
         <a href="moses ochieng otieno resume.pdf" class="btn" >Download Resume</a>
         
     </div>
+</div>
 </div>
     </section>
    
@@ -155,7 +156,7 @@
     </section>
     <!--services section design-->
     <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
+        <h2  style="padding-top: 70px;" class="heading">My <span>Services</span></h2>
         <div class="services-container">
             <div class="services-box">
             <i class='bx bx-code'></i>
@@ -210,7 +211,7 @@
     </section>
     <!--portfolio section design-->
 <section class="portfolio" id="portfolio">
-    <h2 class="heading">Latest<span>Project</span></h2>
+    <h2  style="padding-top: 70px;"  class="heading">Latest<span>Project</span></h2>
     <div class="portfolio-container">
     
        
@@ -242,11 +243,47 @@
     </div>
 </section>
 <!--contact section-->
+<center>
 <section class="contact" id="contact">
-    
+    <h1>Get In Touch</h1>
+    <!--form container-->
+    <div class="form-container">
+        <!--form layout-->
+        <form action="https://formsubmit.co/moses22otieno@gmail.com" method="POST">
+            <!--first name and last name  input divs-->
+        <div class="fs" >
+            <div class="fname">
+                <label for="fname">First Name :</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Your first name.." required>
+            </div>
+            <div class="lname">
+                <label for="lname">Last Name :</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Your last name..">
+                   </div>
+        </div>
+        <!--email and message input  div-->
+        <div class="em"  >
+            <div class="Email">
+                <label for="email">Email :</label><br>
+                <input type="email" id="emial" name="email" placeholder="Your emial.." required>
+            </div>
+            <input type="hidden" name="_next" value="https://otieno-moses-ochieng.github.io/otieno-moses-portfolio/">
+            <div class="message">
+                <label for="message">Subject :</label><br>
+                <input type="text" id="message" name="subject" placeholder="Your message..">
+                   </div>
+        </div>
+        <input type="hidden" name="_captcha" value="false">
+        <div class="textarea">
+            <label for="textArea"></label>
+            <textarea name="textArea" name="textarea" id="textArea" rows="6" cols="50" placeholder="Type your message here..."></textarea>
+           </div>
+           <button type="submit"><b>Submit</b></button>
+        </form>
+    </div>
 
 </section>
-
+</center>
 <!--footer designing-->
 <footer class="footer" id="footer">
     <div class="footer-text">
