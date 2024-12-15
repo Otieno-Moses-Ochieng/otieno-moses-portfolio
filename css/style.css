@@ -25,6 +25,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 hr{
     color: #fff;
 }
@@ -151,341 +153,22 @@ span{
     font-weight: 600;
     transition: 1s ease;
 }
-button{
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: var(--main-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
-    font-size: 1.6rem;
-    color: var(--second-bg-color);
-    letter-spacing: 1rem;
-    font-weight: 600;
-    transition: 1s ease;
-    cursor: pointer;
-}
-
-.btn:hover{
-box-shadow: none;
-}
-.about{
-    position: relative; /* Add relative positioning */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem; /* Adjust padding as needed */
-    background: url('../images/m2.avif') no-repeat;
-    background-size: cover; /* Cover the entire section */
-    background-position: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example box shadow */
-    z-index: 1; }
-.about #more{
-    display: none;
-}
-.about-img img{
-width: 35vw;
-border-radius: 50px;
-}
-.heading{
-    text-align: center;
-    font-size: 4.5rem;
-}
-.about-content h2{
-    text-align: left;
-    line-height: 1.2;
-}
-.about-content h3{
-    font-size: 2.6rem;
-}
-.about-content p{
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-}
-.services{
-    position: relative; /* Add relative positioning */
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem; /* Adjust padding as needed */
-    background: url('../images/m1.jpg') no-repeat;
-    background-size: cover; /* Cover the entire section */
-    background-position: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example box shadow */
-    z-index: 1; 
-}
-.services h2{
-    margin-bottom: 5rem;
-}
-.services-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    
-}
-
-.services-container .services-box{
-    flex: 1 1 30rem;
-    background: var(--second-bg-color);
-    padding: 2rem 4rem;
-    text-align: center;
-    border: 2rem solid var(--bg-color);
-    transition: 3s ease;
-}
-.services-container .services-box:hover{
-    border-color: var(--main-color);
-    transform: scale(1.02);
-}
-.services-box i{
-    font-size: 7rem;
-    color: var(--main-color);
-}
-.services-box h3{
-    font-size: 2.6rem;
-}
-.services-box p{
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
-}
-.portfolio{
-    
-    position: relative; /* Add relative positioning */
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem; /* Adjust padding as needed */
-    background: url('../images/m3.jpg') no-repeat;
-    background-size: cover; /* Cover the entire section */
-    background-position: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example box shadow */
-    z-index: 1; 
-}
-.portfolio h2{
-    margin-bottom: 4rem;
-    
-}
-.portfolio-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-}
-.portfolio-container .portfolio-box{
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem;
-    overflow: hidden;
-    display: flex;
-}
-.portfolio-box img{
-    width: 100%;
-    transition: 2s ease;
-}
-.portfolio-box img:hover{
-    transform: scale(1.1);
-}
-.portfolio-box .portfolio-layer{
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    width:100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,1,), var(--main-color));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translate(100%);
-    transition: 2s ease;
-}
-.portfolio-box:hover .portfolio-layer{
-transform: translateY(0);
-}
-.portfolio-layer h4{
-    font-size: 3rem;
-}
-.portfolio-layerp{
-    font-size: 1.6rem;
-    margin: 3rem 0 1rem;
-}
-.portfolio-layer a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: red;
-    border-radius: 50%;
-    color: black;
-    
-}
-.portfolio-layer a i{
-    font-size: 2rem;
-    color: var(--second-bg-color);
-}
 
 /* Styles for all devices */
 
-.contact {
-    height: 100vh;
-    background: url('../images/m4.jpg') no-repeat;
-    background-size: cover; /* Cover the entire section */
-  }
-  
-  .contact h1 {
-    font-size: 40px;
-    font-weight: 600;
-    background-color: black;
-  }
-  
-  .contact .form-container {
-    width: 600px; /* Adjust width for larger screens */
-    height: auto;
-    background-color: #0ef;
-    opacity: 0.9;
-    text-align: center;
-    border-radius: 20px;
-  }
-  
-  .contact .form-container form {
-    width: auto;
-    height: auto;
-    padding: 20px;
-    background-color: black;
-    border-radius: 20px;
-  }
-  
-  .contact .form-container form textarea {
-    width: 100%; /* Make textarea responsive */
-    height: 100px;
-    padding: 10px;
-    border-radius: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: 500;
-  }
-  
-  .contact .form-container form .textarea {
-    padding: 20px;
-  }
-  
-  .contact .form-container form .fs,
-  .contact .form-container form .em {
-    display: inline-flex;
-    padding: 10px;
-  }
-  
-  .contact .form-container form input {
-    width: 100%; /* Make inputs responsive */
-    height: 50px;
-    padding-right: 10px;
-    border-radius: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: 500;
-  }
-  
-  .contact .form-container form label {
-    padding: 10px;
-    border-radius: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: 500;
-  }
-  
-  .contact .form-container form button {
-    /* Add button styles here (consider responsive sizing) */
-  }
+
   
   
   /* Styles for smaller devices (optional) */
   
-  @media only screen and (max-width: 768px) {
-    .home-transparent-div{
-        display: block;
-    }
-    .contact .form-container {
-      width: 90%; /* Adjust width for smaller screens */
-    }
   
-    .contact .form-container form .fs,
-    .contact .form-container form .em {
-      flex-direction: column; /* Stack inputs vertically */
-    }
-  
-    .contact .form-container form label {
-      margin-bottom: 5px; /* Add space between labels and inputs */
-    }
-  }
 
 
-.footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem 9%;
-    background: var(--second-bg-color);
-}
-.footer-text p{
-    font-size: 1.6rem;
-}
-.footer-iconTop a{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    background: var(--main-color);
-    border-radius: 8rem;
-    transition: 1s ease;
-}
-.footer-iconTop a i{
-    font-size: 2.4rem;
-    color: var(--second-bg-color);
-}
-.footer-iconTop a:hover{
-    box-shadow: 0 0 1rem;
-    color: var(--second-bg-color);
-}
-
-
-
- 
-       
-    
-
-
-
-/*breakpoints*/
-@media (max-width: 1200px){
-    html{
-        font-size: 55%;
-    }
-}
 @media(max-width: 991px){
     .header{
         padding:2rem 3%;
     }
-    section{
-        padding:10rem 3% 2rem;
-    }
-    .footer{
-        padding:2rem 3%;
-    }
-    .services{
-        padding-bottom: 7rem;
-    }
-    .portfolio{
-        padding-bottom:7rem;
-    }
-    .contact{
-        min-height: auto;
-    }
+   
 }
 @media(max-width: 768px){
     #menu-icon{
@@ -510,54 +193,10 @@ transform: translateY(0);
         display: block;
         margin: 3rem 0;
     }
-    .home{
-        flex-direction: column;
-    }
-    .home-transparent-div{
-        display: block;
-    }
-    .home-content h3{
-        font-size: 2,5rem;
-    }
-    .home-content h1{
-        font-size: 5rem;
-    }
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-        position: absolute;
-         border-radius: 50%;
-       
-    }
-    .about{
-        flex-direction: column-reverse;
-        display: inline-block;
-    }
-    .about img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-    .services h1{
-        margin-bottom: 3rem;
-    }
-    .portfolio h2{
-        margin-bottom: 3rem;
-    }
-    .portfolio-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    
 }
 
 @media(max-width: 617px){
-    .portfolio-container{
-        grid-template-columns: 1fr;
-    }
-    .home-transparent-div{
-        display: block;
-    }
-
+   
 }
 
 @media(max-width: 450px){
